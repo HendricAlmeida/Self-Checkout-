@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Self Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+    <div class="container-main">
+        <section class="search-section">
+            <h1>Self-Checkout</h1>
+            
+            <div class="container-search">
+                <input onfocus="onSearch()" placeholder="Search Item" class="search-input" type="text">
+                <div onfocus="onSearch()" onblur="offSearch()" class="container-item">
+                    <button onclick="addItemInOverall(0)" class="search-item">
+                        <img src="assets/img/images (1).jpg" alt="">
+                        <div class="container-text">
+                            <h4>Apple</h4>
+                            <p>$6.00</p>
+                        </div>
+                    </button>
+                    <button onclick="addItemInOverall(1)" class="search-item">
+                        <img src="assets/img/images (2).jpg" alt="">
+                        <div class="container-text">
+                            <h4>Grapes</h4>
+                            <p>$6.00</p>
+                    </div>
+                    <button onclick="addItemInOverall(2)" class="search-item">
+                        <img src="assets/img/ilustracao-de-pera-vintage_53876-112720.avif" alt="">
+                        <div class="container-text">
+                            <h4>Pears</h4>
+                            <p>$6.00</p>
+                    </div>
+                </button>
+            </div>
+            </div>
+            
+            <div class="btn-colection">
+                <button onclick="addDisplayPay()" class="black-btn">Proceed to checkout</button>
+                <button class="white-btn">Payment Help</button>
+            </div>
+        </section>
+        <section class="overall-section">
+            <h3>Selected Itens</h3>
+            <div id="item-overall" class="item-overall">
+                <p id="indicator">1x</p>
+                <p id="item-name">Item</p>
+                <p id="item-price">R$00.00</p>
+                <div class="btn-add-remove-item">
+                    <button onclick="addItemPrice()" class="btn-plus">+</button>
+                    <button onclick="removeItemPrice()" class="btn-min">-</button>
+                </div>
+            </div>
+            <h1 id="overall-price" class="overall-price">R$00.00</h1>
+        </section>
+    </div>
+    <div class="payment-section">
+        <p class="sub-text">Finalize sua Compra</p>
+        <div class="viewer-price">
+            <p>Price:</p>
+            <p>R$00.00</p>
+        </div>
+        <div class="way-payment">
+            <p class="sub-text" >Formas de Pagamento:</p>
+                <div class="btn-payment">
+                    <button onclick="btnActive(0)" class="btn">Pix</button>
+                    <button onclick="btnActive(1)" class="btn">Cartão</button>
+                    <button onclick="btnActive(2)" class="btn">Boleto</button>
+                </div>
+            </div>
+        <div class="payment-box-info"></div>
+        <div class="btn-colection">
+            <button class="black-btn">I pay</button>
+            <button onclick="removeDisplayPay()" class="white-btn">Cancel</button>
+        </div>
+    </div>
+    <footer><p>Devoloped by <a href="https://www.linkedin.com/in/hendric-almeida-7a62b0296/">Hendric Almeida</a></p></footer>
+    <script src="overall.js"></script>
+    <script src="search.js"></script>
+    <script src="payment-page-function.js"></script>
+</body>
+</html>

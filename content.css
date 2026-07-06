@@ -1,0 +1,129 @@
+.container-main{
+    background-color: #D9D9D9;
+    width: 700px;
+    height: 75%;
+    display: flex;
+    border-radius: 15px;
+}
+.container-search{
+    position: relative;
+    bottom: 3rem;
+}
+.search-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: start;
+    padding: 30px;
+    width: 50%;
+}
+
+.overall-section{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overall-section h3 {
+    height: 43.200px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-colection{
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-colection button {
+    height: 30px;
+    padding: 0 15px 0 15px;
+    border: none;
+    border-radius: 35px;
+    transition: transform 2s ease;
+    font-size: 0.70rem;
+    cursor: pointer;
+}
+
+.btn-colection button:active{
+    transform: scale(0.60);
+}
+
+
+.black-btn{
+    background-color: #111111;
+    color: #D9D9D9;
+    font-weight: 600;
+
+}
+
+.item-overall{
+    position: relative;
+    bottom: 8.5rem;
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    justify-content: space-between;
+}
+.overall-price{
+    top: 75%;
+    text-align: end;
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+.btn-add-remove-item{
+    display: flex;
+}
+.search-section::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 60%;
+    width: 2px;
+    background-color: #bebebe8f;
+} 
+
+
+.btn-add-remove-item button{
+    margin: 0;
+    width: 30px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.btn-add-remove-item button:active{
+    background-color: #c6c6c6;
+}
+
+.btn-plus{
+    border-radius: 5px 0px 0px 5px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-width: 0 1px 0 0; 
+}
+
+.btn-min{
+    border-radius: 0px 5px 5px 0px;
+        border: none;
+}
+
+.search-input{
+    position: absolute;
+    z-index: 3;
+    bottom: 4rem;
+    padding: 10px 10px 10px 15px;
+    border-radius: 35px;
+    border: none;
+    width: 100%;
+}
+.overall-section{
+    height: 100%;
+}
+.overall-section h3{
+    font-size: 1rem;
+}
