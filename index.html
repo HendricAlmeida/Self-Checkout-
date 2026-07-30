@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Self Checkout</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="content.css">
-    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/content.css">
+    <link rel="stylesheet" href="/src/css/components.css">
 </head>
 <body>
     <div class="container-main">
@@ -16,20 +16,20 @@
             <h1>Self-Checkout</h1>
             
             <div class="container-search">
-                <input placeholder="Search Item" class="search-input" type="text">
+                <input onfocus="onSearch()" onblur="offSearch()" placeholder="Search Item" class="search-input" type="text">
                 <div class="container-itens-seached">
-                    <div onclick="AddItemOnOverall('maçã')" class="item-seached" id="item-maçã">
+                    <div onclick="AddItemOnOverall('apple')" class="item-seached" id="item-apple">
                         <img src="/assets/img/images (1).jpg"  alt="">
                         <div class="item-seached-info">
                             <p>Apple</p>
-                            <p>R$00.00</p>
+                            <p>R$1.90</p>
                         </div>
                     </div>
-                    <div onclick="AddItemOnOverall('uva')" class="item-seached" id="item-maçã">
+                    <div onclick="AddItemOnOverall('grapes')" class="item-seached" id="item-grapes">
                         <img src="/assets/img/images (2).jpg"  alt="">
                         <div class="item-seached-info">
                             <p id="name-item">Grapes</p>
-                            <p id="price-item">R$00.00</p>
+                            <p id="price-item">R$3.00</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
         <section class="overall-section">
             <h3>Selected Itens</h3>
             <div class="container-items-overall">
-                <div id="item-overall" class="item-overall">
+                <!-- <div id="item-overall" class="item-overall">
                     <p id="indicator">1x</p>
                     <p id="item-name">Item</p>
                     <p id="item-price">R$00.00</p>
@@ -53,35 +53,36 @@
                         <button onclick="addItemPrice()" class="btn-plus">+</button>
                         <button onclick="removeItemPrice()" class="btn-min">-</button>
                     </div>
-                </div>
+                </div> -->
             </div>
             
             <h1 id="overall-price" class="overall-price">R$00.00</h1>
         </section>
     </div>
     <div class="payment-section">
-        <p class="sub-text">Finalize sua Compra</p>
+        <p class="sub-text">Complete your purchase</p>
         <div class="viewer-price">
             <p>Price:</p>
-            <p>R$00.00</p>
+            <p id="price-value">R$00.00</p>
         </div>
         <div class="way-payment">
-            <p class="sub-text" >Formas de Pagamento:</p>
+            <p class="sub-text" >Payment methods</p>
                 <div class="btn-payment">
                     <button onclick="btnActive(0)" class="btn">Pix</button>
-                    <button onclick="btnActive(1)" class="btn">Cartão</button>
-                    <button onclick="btnActive(2)" class="btn">Boleto</button>
+                    <button onclick="btnActive(1)" class="btn">Card</button>
+                    <button onclick="btnActive(2)" class="btn">Ticket</button>
                 </div>
             </div>
-        <div class="payment-box-info"></div>
+        <div class="payment-box-info">
+        </div>
         <div class="btn-colection">
             <button class="black-btn">I pay</button>
             <button onclick="removeDisplayPay()" class="white-btn">Cancel</button>
         </div>
     </div>
     <footer><p>Devoloped by <a href="https://www.linkedin.com/in/hendric-almeida-7a62b0296/">Hendric Almeida</a></p></footer>
-    <script src="overall.js"></script>
-    <script src="search.js"></script>
-    <script src="payment-page-function.js"></script>
+    <script src="/src/js/overall.js"></script>
+    <script src="/src/js/components/search.js"></script>
+    <script src="/src/js/components/payment-page-function.js"></script>
 </body>
 </html>

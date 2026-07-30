@@ -83,11 +83,22 @@
     margin-top: 10px;
     width: 100%;
     height: 100px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 3px;
+    opacity: 1;
     overflow: scroll;
 }
+
+.container .disable{
+    pointer-events: none;
+}
+
+.payment-box-info img {
+    width: 100%;
+    height: 100%;
+}
+
 .container-itens-seached::-webkit-scrollbar{
     display: none;
 }
