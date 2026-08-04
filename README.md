@@ -5,7 +5,8 @@ O self checkout é uma sistema desenvolvido para resolver o grande demanda para 
 - **Status do Projeto:** 🚀 Em desenvolvimento 
 - **Link do Projeto (Deploy):** (https://self-checkout-gray.vercel.app)
 
-
+## ㅤㅤㅤㅤㅤ
+## ㅤㅤㅤㅤㅤ
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -15,7 +16,8 @@ Listagem do ecossistema técnico aplicado no projeto:
 - **Ferramentas:** Git, GitHub, VS Code
 - **Design:** Figma (se você utilizou protótipo)
 
-
+## ㅤㅤㅤㅤㅤ
+## ㅤㅤㅤㅤㅤ
 
 ## ✨ Principais Funcionalidades
 
@@ -24,6 +26,8 @@ Listagem do ecossistema técnico aplicado no projeto:
 - [x] **Funcionalidade 3:** Simulação real de self checkout
 
 
+## ㅤㅤㅤㅤㅤ
+## ㅤㅤㅤㅤㅤ
 
 ## 💻 Como Executar o Projeto Localmente
 
