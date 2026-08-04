@@ -15,7 +15,6 @@ O self checkout é uma sistema desenvolvido para resolver o grande demanda para 
 Listagem do ecossistema técnico aplicado no projeto:
 
 - **Linguagens:** HTML5, CSS3, JavaScript (ES6+)
-- **Frameworks / Bibliotecas:** React / Bootstrap (se aplicável)
 - **Ferramentas:** Git, GitHub, VS Code
 - **Design:** Figma (se você utilizou protótipo)
 
