@@ -10,16 +10,6 @@
     --button-color:#111111;
     --divisor-color: #bebebe8f;
 }
-body.high-contrast{
-    --card-bg:#121212;
-    --bg-main: #000000;
-    --input-bg:#1e1e1e;
-    --text-color-sec: black;
-    --text-color: #ffffff;
-    --text-color-oposite: #D9D9D9;
-    --button-color:#ffff00;
-    --divisor-color: white;
-}
 *{
     margin: 0;
     box-sizing: border-box;
