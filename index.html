@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="/src/css/components.css">
 </head>
 <body>
+    <button class="acess-btn">
+        <img src="/assets/img/acessibilidade.png" alt="">
+    </button>
     <div class="container-main">
-
 
         <section class="search-section">
             <h1>Self-Checkout</h1>
@@ -32,6 +34,9 @@
                             <p id="price-item">R$3.00</p>
                         </div>
                     </div>
+                    <div style="display: none;" class="no-result">
+                        <p>Não encontramos esse item :(</p>
+                    </div>
                 </div>
             </div>
             
@@ -51,7 +56,7 @@
                     <p id="item-price">R$00.00</p>
                     <div class="btn-add-remove-item">
                         <button onclick="addItemPrice()" class="btn-plus">+</button>
-                        <button onclick="removeItemPrice()" class="btn-min">-</button>
+                        <button onclick="removeItemPrice()" class="btn-min"><img src="/assets/img/trash-can.png" alt=""></button>
                     </div>
                 </div> -->
             </div>
@@ -84,5 +89,6 @@
     <script src="/src/js/overall.js"></script>
     <script src="/src/js/components/search.js"></script>
     <script src="/src/js/components/payment-page-function.js"></script>
+    <script src="/src/js/modealt.js"></script>
 </body>
 </html>

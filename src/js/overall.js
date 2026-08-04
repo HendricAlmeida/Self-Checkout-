@@ -1,4 +1,5 @@
-const itemName = document.querySelector("#item-name")
+const itemName = document.querySelector("#item-name");
+
 let overallPriceContainer = document.querySelector('#overall-price')
 let priceValueOver = 0;
 let foiExecutada = false
@@ -10,13 +11,14 @@ const Catalogo = [
 
 function addItemPrice(produto){
    
-   //pegar o indice do produto, problemas: ta pegando o valor anterior então ta guardando o times 
+   //pegar o indice do produto, problemas: ta pegando o valor anterior então ta guardando o times
+
    let index = Catalogo.findIndex(item => item.nome.toLocaleLowerCase() === produto.toLocaleLowerCase())
    let indicator = document.querySelector(`#indicator${index}`)
    let itemPrice = document.querySelector(`#item-price${index}`)
+   const btnMin = document.querySelector(`.btn-min.${produto}`)
    Catalogo[index].pedidos++
-   let qtdPedidos = Catalogo[index].pedidos 
-   
+   let qtdPedidos = Catalogo[index].pedidos
 
 
    let valor = Catalogo[index].price
@@ -26,15 +28,17 @@ function addItemPrice(produto){
    priceValueOver += valor
    overallPriceContainer.innerHTML = `R$${priceValueOver.toFixed(2)}`
    itemPrice.innerHTML = `R$${price.toFixed(2)}` 
-   //console.log(verif)
-   //console.log(produto)
-
+   console.log(btnMin)
+   if(qtdPedidos >= 2){
+      btnMin.innerHTML='-';
+   }
    
 };
 
 function removeItemPrice(produto){
-
+   
    let index = Catalogo.findIndex(item => item.nome.toLocaleLowerCase() === produto.toLocaleLowerCase());
+   const btnMin = document.querySelector(`.btn-min.${produto}`)
    let indicator = document.querySelector(`#indicator${index}`);
    let itemPrice = document.querySelector(`#item-price${index}`);
    
@@ -61,7 +65,9 @@ function removeItemPrice(produto){
       }
       
    }
-
+   if(qtdPedidos === 1){
+      btnMin.innerHTML = '<img class="img-btn" src="/assets/img/delete.png" alt="">'
+   }
    overallPriceContainer.innerHTML = `R$${priceValueOver.toFixed(2)}`;
 };
 
@@ -86,7 +92,7 @@ function AddItemOnOverall(nomeitem){
                     <p id="item-price${index}">R$${nomeDoProduto.price.toFixed(2)}</p>
                     <div class="btn-add-remove-item">
                         <button onclick="addItemPrice('${nomeDoProduto.nome}')" class="btn-plus">+</button>
-                        <button onclick="removeItemPrice('${nomeDoProduto.nome}')" class="btn-min">-</button>
+                        <button onclick="removeItemPrice('${nomeDoProduto.nome}')" class="btn-min ${nomeDoProduto.nome}"><img class="img-btn" src="/assets/img/delete.png" alt=""></button>
                     </div>
                 </div>`;
       
