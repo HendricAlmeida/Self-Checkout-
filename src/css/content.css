@@ -102,3 +102,11 @@
 .container-itens-seached::-webkit-scrollbar{
     display: none;
 }
+
+.no-result{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
