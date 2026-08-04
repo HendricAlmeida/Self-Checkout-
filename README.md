@@ -1,3 +1,5 @@
+
+ ㅤㅤㅤㅤ
 # Self Checkout
 
 O self checkout é uma sistema desenvolvido para resolver o grande demanda para lidar com grandes fluxos de cliente, como no supermercado. Foi desenvolvido também como aprendizado para resolução de problemas reais para que me possibilite criar soluções eficientes para outros problemas
@@ -5,8 +7,8 @@ O self checkout é uma sistema desenvolvido para resolver o grande demanda para 
 - **Status do Projeto:** 🚀 Em desenvolvimento 
 - **Link do Projeto (Deploy):** (https://self-checkout-gray.vercel.app)
 
-## ㅤㅤㅤㅤㅤ
-## ㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤ
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -14,20 +16,19 @@ Listagem do ecossistema técnico aplicado no projeto:
 
 - **Linguagens:** HTML5, CSS3, JavaScript (ES6+)
 - **Ferramentas:** Git, GitHub, VS Code
-- **Design:** Figma (se você utilizou protótipo)
 
-## ㅤㅤㅤㅤㅤ
-## ㅤㅤㅤㅤㅤ
 
+ ㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤ
 ## ✨ Principais Funcionalidades
 
 - [x] **Funcionalidade 1:** Layout Responsivo e Limpo focado para usabilidade do sistema.
 - [x] **Funcionalidade 2:** Gestão de item com DOM.
-- [x] **Funcionalidade 3:** Simulação real de self checkout
+- [x] **Funcionalidade 3:** Simulação real de self checkout.
 
 
-## ㅤㅤㅤㅤㅤ
-## ㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 
 ## 💻 Como Executar o Projeto Localmente
 
